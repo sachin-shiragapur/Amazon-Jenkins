@@ -26,10 +26,10 @@ pipeline {
   post{
     
   failure{
-       echo 'Failure in the build'
+       echo 'Failure in the build occurs'
    }
 
   }
-
+#this is changes made
 
 }
