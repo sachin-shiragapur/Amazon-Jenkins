@@ -9,6 +9,8 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/sachin-shiragapur/Amazon-Jenkins.git'
             }
         }
+      }
+    
         stage('compile') {
             steps {
                 sh 'mvn compile'
@@ -32,6 +34,6 @@ pipeline {
    }     
          
   }
-      }
+      
 }
 
