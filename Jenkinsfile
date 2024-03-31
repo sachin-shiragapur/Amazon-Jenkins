@@ -20,8 +20,13 @@ pipeline {
                  sh 'mvn clean install'
             }
         }
-
+          
+ stage('Archive Artifacts') {
+            steps {
+               
+                archiveArtifacts 'target/**/*.jar'
     }
+ }
 
   post{
     
