@@ -28,6 +28,12 @@ pipeline {
   failure{
        echo 'Failure in the build occurs'
    }
+      
+      success {
+            echo 'Build successful! Archiving artifacts...'
+             archiveArtifacts artifacts: '\'target/*.jar\'', followSymlinks: false, onlyIfSuccessful: true
 
+        }
+         
   }
 }
