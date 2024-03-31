@@ -4,7 +4,7 @@ pipeline {
 
         stage('pull') {
             steps {
-                git branch: 'main', url: 'https://github.com/PraveenKuber/Amazon-Jenkins.git'
+                git branch: 'main', url: 'git@github.com:sachin-shiragapur/Amazon-Jenkins' 
             }
         }
         stage('compile') {
@@ -31,6 +31,4 @@ pipeline {
    }
 
   }
-
-#this is the added line
 }
