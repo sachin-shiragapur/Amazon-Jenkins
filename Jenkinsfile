@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        node {
+            label linux-private-ip-vm-ssh1-vm3
+        }
+    }
+    
     stages {
 
         stage('pull') {
