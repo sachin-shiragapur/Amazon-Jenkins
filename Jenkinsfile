@@ -21,24 +21,17 @@ pipeline {
             }
         }
           
- stage('Archive Artifacts') {
-            steps {
-               
-                archiveArtifacts 'target/**/*.jar'
-    }
- }
+
+    
+ 
 
   post{
     
   failure{
        echo 'Failure in the build occurs'
-   }
-      
-      success {
-            echo 'Build successful! Archiving artifacts...'
-             archiveArtifacts artifacts: '\'target/*.jar\'', followSymlinks: false, onlyIfSuccessful: true
-
-        }
+   }     
          
   }
+      }
 }
+
