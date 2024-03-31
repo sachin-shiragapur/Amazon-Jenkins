@@ -1,8 +1,10 @@
 pipeline {
-    agent label linux-private-ip-vm-ssh1-vm3
-    stages {
-
-        stage('pull') {
+    agent {
+        label 'linux-private-ip-vm-ssh1-vm3'
+    }
+      stages { 
+          
+          stage('pull') {
             steps {
                 git branch: 'main', url: 'https://github.com/sachin-shiragapur/Amazon-Jenkins.git'
             }
@@ -13,10 +15,7 @@ pipeline {
             }
         }
 
-
-        
-        
-        stage('build') {
+          stage('build') {
             steps {
                  sh 'mvn clean install'
             }
