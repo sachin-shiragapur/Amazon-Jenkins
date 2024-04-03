@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'Agent windows-vm-public-ip-slave'
+        label 'windows-vm-public-ip-slave'
     }
       stages { 
           
