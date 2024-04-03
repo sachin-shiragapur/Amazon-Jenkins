@@ -1,6 +1,6 @@
 pipeline {
     agent {
-        label 'linux-private-ip-vm-ssh1-vm3'
+        label 'Agent windows-vm-public-ip-slave'
     }
       stages { 
           
