@@ -1,5 +1,5 @@
 pipeline {
-#this is additional line
+// this is additional line
    agent any
     stages {
 
@@ -30,7 +30,7 @@ pipeline {
    }
 
   }
-#this is changes made
+// this is changes made
 
 }
 .
