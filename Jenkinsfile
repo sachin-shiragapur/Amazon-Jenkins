@@ -8,7 +8,8 @@ pipeline {
             }
         }
 
-#edited line for webhook practice
+// This is a comment for webhook practice
+
         stage('compile') {
             steps {
                 sh 'mvn compile'
