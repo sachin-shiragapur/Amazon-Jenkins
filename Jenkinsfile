@@ -30,7 +30,3 @@ pipeline {
    }
 
   }
-// this is changes made
-
-}
-.
