@@ -1,6 +1,5 @@
 pipeline {
-// this is additional line
-   agent any
+    agent any
     stages {
 
         stage('pull') {
@@ -8,6 +7,9 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/PraveenKuber/Amazon-Jenkins.git'
             }
         }
+
+// This is a comment for webhook practice
+
         stage('compile') {
             steps {
                 sh 'mvn compile'
@@ -23,10 +25,15 @@ pipeline {
 
     }
 
+
+    
   post{
     
   failure{
-       echo 'Failure in the build occurs'
+       echo 'Failure in the build'
    }
 
   }
+
+
+}
